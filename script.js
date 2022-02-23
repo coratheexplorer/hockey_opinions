@@ -6,11 +6,11 @@ var Quiz = function(){
   
   this.correctAnswers = [
     { question: 1, answer: 'a' },
-    { question: 2, answer: 'b' },
-    { question: 3, answer: 'd' },
+    { question: 2, answer: 'd' },
+    { question: 3, answer: 'b' },
     { question: 4, answer: 'c' },
-    { question: 5, answer: 'd' },
-    { question: 6, answer: 'b' },
+    { question: 5, answer: 'f' },
+    { question: 6, answer: 'e' },
   ]
   
   this._pickAnswer = function($answer, $answers){
