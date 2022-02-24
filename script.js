@@ -6,11 +6,11 @@ var Quiz = function(){
   
   this.correctAnswers = [
     { question: 1, answer: 'a' },
-    { question: 2, answer: 'b' },
-    { question: 3, answer: 'd' },
+    { question: 2, answer: 'd' },
+    { question: 3, answer: 'b' },
     { question: 4, answer: 'c' },
-    { question: 5, answer: 'd' },
-    { question: 6, answer: 'b' },
+    { question: 5, answer: 'f' },
+    { question: 6, answer: 'e' },
   ]
   
   this._pickAnswer = function($answer, $answers){
@@ -43,13 +43,15 @@ var Quiz = function(){
       }
     });
     if ( numberOfCorrectAnswers < 3 ) {
-      return {code: 'bad', text: 'Poor spelling skills'};
+      return {code: 'bad', text: 'YOU ARE A TERRIBLE PERSON WITH HORRIBLE JUDGEMENT'};
     }
     else if ( numberOfCorrectAnswers == 3 || numberOfCorrectAnswers == 4 ) {
-      return {code: 'mid', text: 'Moderate spelling skills'};
+      return {code: 'mid', text: 'NOT IMPRESSED DO BETTER BUDDY'};
     }
-    else if ( numberOfCorrectAnswers > 4 ) {
-      return {code: 'good', text: 'Good spelling skills'};
+    else if ( numberOfCorrectAnswers == 5 ) {
+      return {code: 'good', text: 'NOT BAD JUST A LITTLE WORRIED ABOUT WHAT YOU GOT WRONG'};
+      else if ( numberOfCorrectAnswers == 5 ) {
+      return {code: 'terrific', text: 'I RESPECT YOU'};
     }
   }
   this._isComplete = function(){
