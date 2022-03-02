@@ -11,6 +11,17 @@ var Quiz = function(){
     { question: 4, answer: 'c' },
     { question: 5, answer: 'f' },
     { question: 6, answer: 'e' },
+    { question: 7, answer: 'd' },
+    { question: 8, answer: 'b' },
+    { question: 9, answer: 'b' },
+    { question: 10, answer: 'a' },
+    { question: 11, answer: 'a' },
+    { question: 12, answer: 'c' },
+    { question: 13, answer: 'a' },
+    { question: 14, answer: 'a' },
+    { question: 15, answer: 'c' },
+    
+    
   ]
   
   this._pickAnswer = function($answer, $answers){
